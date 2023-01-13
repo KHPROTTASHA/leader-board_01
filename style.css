@@ -67,10 +67,8 @@ main{
     color: #562eff;
 }
 .courses{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 30px;
-    
+   display: flex;
+   column-gap: 20px;
 }
 .course .course_photo img{
     width: 224px;
@@ -81,4 +79,9 @@ main{
 }
 .fa-solid.fa-star.empty{
     color: silver;
+}
+.star{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
