@@ -6,12 +6,15 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .container{
     background-color: #ffffff;
     width: 870px;
     padding: 33px;
+    margin-top: 21px;
+    border-radius:5px ;
 }
 .top-players{
     margin-bottom: 30px;
@@ -39,6 +42,7 @@ main{
 .blogs{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
 }
 .blog{
     display: flex;
@@ -61,4 +65,20 @@ main{
     text-decoration: none;
     font-size: 16px;
     color: #562eff;
+}
+.courses{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    
+}
+.course .course_photo img{
+    width: 224px;
+    height: 105px;
+}
+.fa-solid.fa-star.filled{
+    color: gold;
+}
+.fa-solid.fa-star.empty{
+    color: silver;
 }
