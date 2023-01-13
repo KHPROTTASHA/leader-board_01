@@ -85,3 +85,25 @@ main{
     align-items: center;
     justify-content: space-between;
 }
+@media screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player, .courses, .blogs{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:689px) and (max-width:992) {
+    .container{
+        width: 100%; 
+}
+.players, .blogs, .courses{
+    grid-template-columns: repeat(2,1fr);
+}
+.player, .course, .blog{
+    flex-direction: column;
+}
+}
